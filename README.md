@@ -1,10 +1,10 @@
 # KitOssBundle
 Aliyun OSS Bundle for Symfony3
 
-Installation
+## Installation
 ============
  
-Step 1: Download the Bundle
+### Step 1: Download the Bundle
 ---------------------------
  
 Open a command console, enter your project directory and execute the
@@ -18,7 +18,7 @@ This command requires you to have Composer installed globally, as explained
 in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
 of the Composer documentation.
  
-Step 2: Enable the Bundle
+### Step 2: Enable the Bundle
 ---------------------------
  
 Then, enable the bundle by adding it to the list of registered bundles
@@ -45,3 +45,5 @@ class AppKernel extends Kernel
     // ...
 }
 ```
+## Usage
+============
