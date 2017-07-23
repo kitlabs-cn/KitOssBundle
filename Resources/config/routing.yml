@@ -1,3 +1,0 @@
-kit_oss_homepage:
-    path:     /
-    defaults: { _controller: KitOssBundle:Default:index }

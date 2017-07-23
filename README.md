@@ -2,7 +2,6 @@
 Aliyun OSS Bundle for Symfony3
 
 ## Installation
-============
  
 ### Step 1: Download the Bundle
 ---------------------------
@@ -46,4 +45,17 @@ class AppKernel extends Kernel
 }
 ```
 ## Usage
-============
+```php
+
+/**
+ *
+ * @var $arService \KitBaseBundle\Service\VoidarService
+ */
+$ossService = $this->get('kit_oss.oss_client_service');
+$ossClient = $ossService->getClient($accessKeyId, $accessKeySecret, $endpoint);
+$bucketListInfo = $ossClient->listBuckets();
+$bucketList = $bucketListInfo->getBucketList();
+foreach($bucketList as $bucket) {
+    dump($bucket->getLocation() . "\t" . $bucket->getName() . "\t" . $bucket->getCreatedate() . "\n");
+}
+```
