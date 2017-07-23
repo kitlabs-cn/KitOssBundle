@@ -49,7 +49,7 @@ class AppKernel extends Kernel
 
 /**
  *
- * @var $arService \KitBaseBundle\Service\VoidarService
+ * @var $ossService \Kit\Bundle\OssBundle\Service\ossClientService
  */
 $ossService = $this->get('kit_oss.oss_client_service');
 $ossClient = $ossService->getClient($accessKeyId, $accessKeySecret, $endpoint);
