@@ -1,6 +1,6 @@
 <?php
 
-namespace Kit\OssBundle\DependencyInjection;
+namespace Kit\Bundle\OssBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

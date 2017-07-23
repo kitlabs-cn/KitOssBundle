@@ -1,6 +1,6 @@
 <?php
 
-namespace Kit\OssBundle;
+namespace Kit\Bundle\OssBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kit\OssBundle\Controller;
+namespace Kit\Bundle\OssBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kit\OssBundle\Tests\Controller;
+namespace Kit\Bundle\OssBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

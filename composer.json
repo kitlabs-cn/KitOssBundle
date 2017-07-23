@@ -1,5 +1,5 @@
 {
-	"name": "kitlabs-cn/kit-oss-bundle",
+	"name": "kitlabs/kit-oss-bundle",
 	"type": "symfony-bundle",
 	"description": "Easily use aliyun oss in Symfony",
 	"keywords": ["Aliyun OSS"],
@@ -25,7 +25,7 @@
 	},
 	"autoload": {
 		 "psr-4": {
-            "Kit\\OssBundle\\": ""
+            "Kit\\Bundle\\OssBundle\\": ""
         }
 	}
 }
