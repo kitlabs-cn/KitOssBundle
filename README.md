@@ -36,7 +36,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
  
-            new Kit\OssBundle\KitOssBundle(),
+            new Kit\Bundle\OssBundle\KitOssBundle(),
         );
  
         // ...
