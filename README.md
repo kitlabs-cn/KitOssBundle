@@ -51,11 +51,12 @@ in the `app/AppKernel.php` file of your project:
 	    access_key_secret: ************
 	    endpoint: oss-cn-beijing.aliyuncs.com
 ## Usage
-- get bucket list
+- bucket
 
 		/**
-		 *
 		 * @var $bucketService \Kit\Bundle\OssBundle\Service\ossClientService
 		 */
 		$bucketService = $this->get('kit_oss.bucket_service');
-		dump($bucketService->list());
+		$bucketService->create($bucket);
+		$bucketService->list();
+		$bucketService->checkExist($bucket);
