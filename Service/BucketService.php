@@ -28,4 +28,19 @@ class BucketService extends  ClientService
             return false;
         }
     }
+    
+    public function delete($bucket)
+    {
+        
+    }
+    
+    public function setAcl()
+    {
+        
+    }
+    
+    public function getAcl()
+    {
+        
+    }
 }
