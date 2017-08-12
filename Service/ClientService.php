@@ -26,7 +26,7 @@ class ClientService
     public function getClient()
     {
         try{
-            return new OssClient($this->accessKeyId, $$this->accessKeySecret, $$this->endpoint);
+            return new OssClient($this->accessKeyId, $this->accessKeySecret, $this->endpoint);
         }catch (\OSS\Core\OssException $e) {
             return null;
         }catch (\Exception $e){

@@ -24,5 +24,9 @@ class KitOssExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        
+        $container->setParameter('kit_oss.access_key_id', $config['access_key_id']);
+        $container->setParameter('kit_oss.access_key_secret', $config['access_key_secret']);
+        $container->setParameter('kit_oss.endpoint', $config['endpoint']);
     }
 }
