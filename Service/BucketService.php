@@ -31,15 +31,101 @@ class BucketService extends  ClientService
     
     public function delete($bucket)
     {
-        
+        try {
+            return $this->getClient()->deleteBucket($bucket);
+        }catch (\Exception $e){
+            return false;
+        }
     }
     
-    public function setAcl()
+    public function setAcl($bucket, $acl)
+    {
+        try {
+            return $this->getClient()->putBucketAcl($bucket, $acl);
+        }catch (\Exception $e){
+            return false;
+        }
+    }
+    
+    public function getAcl($bucket)
+    {
+        try {
+            return $this->getClient()->getBucketAcl($bucket);
+        }catch (\Exception $e){
+            return false;
+        }
+    }
+    
+    public function setCors()
     {
         
     }
     
-    public function getAcl()
+    public function getCors()
+    {
+        
+    }
+    
+    public function deleteCors()
+    {
+        
+    }
+    
+    public function setLifecycle()
+    {
+        
+    }
+    
+    public function getLifecycle()
+    {
+        
+    }
+    
+    public function deleteLifecycle()
+    {
+        
+    }
+    
+    public function setLogging()
+    {
+        
+    }
+    
+    public function getLogging()
+    {
+        
+    }
+    
+    public function deleteLogging()
+    {
+        
+    }
+    
+    public function setReferer()
+    {
+        
+    }
+    
+    public function getReferer()
+    {
+        
+    }
+    
+    public function deleteReferer()
+    {
+        
+    }
+    public function setWebsite()
+    {
+        
+    }
+    
+    public function getWebsite()
+    {
+        
+    }
+    
+    public function deleteWebsite()
     {
         
     }
