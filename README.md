@@ -58,5 +58,5 @@ in the `app/AppKernel.php` file of your project:
 		 */
 		$bucketService = $this->get('kit_oss.bucket_service');
 		$bucketService->create($bucket);
-		$bucketService->list();
+		$bucketService->getList();
 		$bucketService->checkExist($bucket);
