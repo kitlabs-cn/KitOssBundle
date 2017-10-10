@@ -23,6 +23,7 @@ class FileService extends ClientService
                 }
             }
             if(!empty($dir)) $object = trim($dir, '/') . '/' . $object;
+            $this->getClient()->setTimeout(3600);
             $result = $this->getClient()->uploadFile($bucket, $object, $file);
             if(isset($result['oss-request-url']) && !empty($result['oss-request-url'])){
                 return [
